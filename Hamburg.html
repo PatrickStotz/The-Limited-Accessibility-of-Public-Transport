@@ -14,6 +14,8 @@
    <script src="js/jquery.twentytwenty.js"></script>
    <link href="css/foundation.css" rel="stylesheet" type="text/css">
    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css">
+   <link href="css/mystyle.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -29,18 +31,28 @@
    </script>
 
    <!-- Adding logo -->
-   <a href="http://mappable.info/blog/2014/2/8/accessibility">
-   <div class="image">
-   <span style='float:left; padding-top:5px'>
-      <img src="logo.png"> 
-   </span>
-   </a>
+   <div id="container">
 
-   <!-- Adding attribution-->
-   <span style='float:right;'>
-      <h3 style="padding-right:20px"> original map by Lars Hänisch 
-         <a href="http://commons.wikimedia.org/wiki/File:Bahnlinien_im_HVV.png">wikimedia commons
-      </h3>
-   </span>
+      <div id="left">
+         <a href="http://mappable.info/blog/2014/2/8/accessibility">
+            <img src="logo.png"> 
+         </a>
+      </div>
+
+      <!-- Adding buttons to switch between cities-->
+      <div id="mid">
+         <div onclick="location.href='Hamburg.html';" class="button" style="background-color:#333">Hamburg</div>
+         <div onclick="location.href='London.html';" class="button">London</div>
+         <div onclick="location.href='NYC.html';" class="button">New York</div>
+         </div>
+      </div>
+
+      <!-- Adding attribution-->
+      <div id="right">
+         original map by  
+            <a href="http://commons.wikimedia.org/wiki/File:Bahnlinien_im_HVV.png">Lars Hänisch</a>
+      </div>
+   </div>
+
 </body>
 </html>
